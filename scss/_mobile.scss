@@ -20,10 +20,23 @@
         }
     }
 
-    // From
     .menu-branding {
         .portrait {
             background: url('../image/profile_md.jpg');
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+        grid-template-columns: 1fr;
+        .bio-image {
             width: 170px;
             height: 170px;
         }
@@ -32,14 +45,12 @@
 
 // Smartphones
 @include mediaSm {
-    main#home {
+    main#home, #about {
         .lg-heading {
             font-size: 4rem;
             margin-top: 6vh;
         }
     }
-
-    // To
 
     ul.menu-nav, 
     div.menu-branding {
