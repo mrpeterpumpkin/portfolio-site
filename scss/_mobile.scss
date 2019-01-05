@@ -1,11 +1,15 @@
 // Wide screens
 @include mediaXl {
-
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // Desktops & Laptops
 @include mediaLg {
-
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 // Tablets
@@ -41,11 +45,15 @@
             height: 170px;
         }
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smartphones
 @include mediaSm {
-    main#home, #about {
+    main#home, #about, #work {
         .lg-heading {
             font-size: 4rem;
             margin-top: 6vh;
@@ -78,5 +86,9 @@
             width: 100px;
             height: 100px;
         }
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
