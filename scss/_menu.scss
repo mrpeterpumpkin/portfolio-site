@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    
     visibility: hidden;
 
     &.show {
@@ -68,6 +68,7 @@
         margin: 0;
         padding: 0;
         background: darken($primary-color, 5);
+        opacity: 0.9;
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -78,7 +79,7 @@
         }
     }
 
-    // Brandin Side
+    // Branding Side
 
     &-branding {
         background: $primary-color;
